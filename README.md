@@ -1,0 +1,1 @@
+# vcamp-edabit-linguagem-get-SHA-256-hash
