@@ -1,15 +1,7 @@
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 
-public class Main {
-    public static void main(String[] args) {
-        // teste 1
-        System.out.println(getSha256Hash("password123"));
-        // teste 2
-        System.out.println(getSha256Hash("Fluffy@home"));
-        // teste 3
-        System.out.println(getSha256Hash("Hey dude!"));
-    }
+public class Challenge {
 
 	private static StringBuilder transformBytesToHex(byte[] hash) {
 
@@ -35,7 +27,7 @@ public class Main {
 			byte[] encodedhash = digest.digest(str.getBytes(StandardCharsets.UTF_8));
 
 			// Transformo bytes para hex e dou um .toString() para transformar em string no final.
-			return transformBytesToHex(encodedhash).toString();
+			return Challenge.transformBytesToHex(encodedhash).toString();
 		} catch(Exception err) { // Exception caso der algum erro retorne a mensagem
 			err.printStackTrace();
 			return "Unexpected Error";
