@@ -6,3 +6,7 @@ Captura dos testes:
 
 Endereço do desafio:
 https://edabit.com/challenge/pxfkEdxgXPKgy7FEb
+
+Comentários:
+Nesse desafio teria um bonus se conseguisse fazer sem utilizar lib porém não consegui utilizei esta:
+https://docs.oracle.com/javase/7/docs/api/java/security/MessageDigest.html
